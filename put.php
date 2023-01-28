@@ -63,3 +63,9 @@ echo '<a href="exclui.php?id=' . $id . ' "class="btn btn-danger"> Excluir </a>';
     				echo 'Erro ao atualizar os dados!!' . $e->getMessage(); }
     			}
 		}
+
+				 ?>
+			
+<hr>
+		</div>
+	</body>

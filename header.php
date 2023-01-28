@@ -1,5 +1,16 @@
 <?php
+  
+      session_start();
     require 'autoload.php';
+    if(isset($_GET['logout'])):
+      if($_GET['logout'] == 'confirmar'):
+        Login::deslogar();
+      endif;
+    endif;
+
+	
+
+  if(isset($_SESSION['logado'])):
 ?>
 
 <!DOCTYPE html>
@@ -22,8 +33,17 @@
     			<a class="nav-link" href="put.php">CADASTRAR</a>
   			</li>
   			<li class="nav-item">
-  				<a class="nav-link" href="#">SAIR</a>	
+  				<a class="nav-link" href="home.php?logut=confirmar">SAIR</a>	
   			</li>
 		</ul>
 	</nav>
 	<hr>
+
+<?php
+  
+	else:
+		echo '<center><h3>ACESSO NEGADO!!</h3></center>';
+		exit();
+	endif;
+
+?>
