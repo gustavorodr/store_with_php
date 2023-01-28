@@ -33,7 +33,7 @@
     			<a class="nav-link" href="put.php">CADASTRAR</a>
   			</li>
   			<li class="nav-item">
-  				<a class="nav-link" href="#">SAIR</a>	
+  				<a class="nav-link" href="home.php?logut=confirmar">SAIR</a>	
   			</li>
 		</ul>
 	</nav>
